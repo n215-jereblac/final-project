@@ -1,0 +1,269 @@
+.home {
+  .hero {
+    width: 100%;
+    height: $hero-height;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    .callout-holder {
+      // background-color: red;
+      height: 70%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .callout {
+        margin: 0 auto;
+        color: $white;
+        h1 {
+          font-family: $NovaC;
+          font-size: 60px;
+          margin-bottom: 25px;
+        }
+        p {
+          font-family: $GS-Italic;
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 48px;
+        }
+      }
+    }
+    span {
+      margin: 0 auto;
+      height: 40px;
+      width: 121px;
+      display: block;
+      background-color: $blue;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      color: white;
+      font-family: $GS;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+  .home-page {
+    min-height: 1250px;
+    // background-color: green;
+    .tours-home {
+      margin: -43px auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      min-height: $tour-banner-height;
+      max-width: 818px;
+
+      .tour-card {
+        min-height: $tour-banner-height;
+        width: $tour-banner-width;
+        // background-color: purple;
+        @include image-format;
+        text-align: center;
+        .tour-text {
+          color: $white;
+          font-family: $NovaC;
+          margin-top: 50px;
+          h1 {
+            font-size: 60px;
+            line-height: 73px;
+          }
+          h2 {
+            font-size: 30px;
+            line-height: 5px;
+            margin-bottom: 60px;
+          }
+        }
+        .tours-button {
+          margin: 0 auto;
+          height: 40px;
+          width: 133px;
+          background-color: $blue;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          a {
+            font-family: $GS;
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+    }
+    .form-wrap {
+      margin: 50px auto 0 auto;
+      max-width: 818px;
+      // background-color: green;
+      h1 {
+        font-family: $NovaC;
+        font-size: 60px;
+      }
+      .form {
+        font-family: $GS-Light;
+        font-size: 18px;
+        // background-color: green;
+        input {
+          border: solid $blue 2px;
+          height: $input-height;
+          padding: 5px;
+          margin-bottom: 20px;
+        }
+        .form-info {
+          margin-top: 30px;
+          min-height: $input-height;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .left {
+            width: 42%;
+            height: $input-height;
+            padding: 20px;
+          }
+          .right {
+            width: 55%;
+            height: $input-height;
+            padding: 20px;
+          }
+        }
+        .single-line {
+          position: relative;
+          .in {
+            margin-right: 52px;
+          }
+          .out {
+            margin-right: 41px;
+          }
+          .date-input {
+            width: 85%;
+            padding: 20px;
+          }
+          .icon {
+            font-size: 18px;
+            position: absolute;
+            margin: 20px -40px;
+          }
+        }
+        .family-input {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: $input-height;
+          margin-bottom: 20px;
+          select {
+            height: $input-height;
+            width: 11%;
+            padding: 15px;
+            border: solid $blue 2px;
+            font-family: $GS-Light;
+            font-size: 18px;
+          }
+        }
+        textarea {
+          width: 100%;
+          height: 192px;
+          padding: 20px;
+          font-family: $GS-Light;
+          font-size: 18px;
+          border: solid $blue 2px;
+          margin-bottom: 35px;
+        }
+        .submit {
+          color: $white;
+          width: 100%;
+          background-color: $blue;
+          font-size: 15px;
+          font-family: $GS;
+          border-radius: 30px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.israel-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tour-01.jpg);
+}
+
+.us-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tour-02.jpg);
+}
+
+.aussie-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tour-03.jpg);
+}
+
+@media (max-width: 1200px) {
+  .form-wrap h1 {
+    text-align: center;
+  }
+  .form-wrap .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .form-wrap .form .single-line .date-input {
+    min-width: 100%;
+    margin-top: 5px;
+  }
+  .form-wrap .form .submit {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 860px) {
+  .home .tours-home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .tours-home .tour-card {
+    margin-bottom: 20px;
+  }
+  .home {
+    .home-page {
+      .form-wrap {
+        .form {
+          .submit {
+            margin-bottom: 75px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .form-wrap .form .family-input select {
+    width: 65px !important;
+  }
+}
+
+@media (max-width: 566px) {
+  .form-wrap .form .family-input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home .hero .callout-holder .callout p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form-wrap .form .family-input select {
+    width: 47px !important;
+    padding: 5px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .home .hero .callout-holder .callout p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

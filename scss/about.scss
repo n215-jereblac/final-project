@@ -1,0 +1,94 @@
+.about {
+        max-width: 980px;
+        margin: 0 auto;
+        min-height: 1050px;
+    .about-text {
+        padding-top: 180px;
+        h1 {
+            
+            border-bottom: solid 2px $black;
+            width: 171px;
+            font-size: 60px;
+            letter-spacing: 5px;
+            font-family: $NovaC;
+        }
+        p {
+            margin-top: 35px;
+            margin-bottom: 100px;
+            font-family: $GS;
+            font-size: 16px;
+        }
+    }
+    h2 {
+        letter-spacing: 2px;
+        border-bottom: solid 2px $black;
+        width: 225px;
+        font-family: $NovaC;
+        font-size: 40px;
+    }
+    .client-holder {
+        display: flex;
+        max-width: 712px;
+        height: 150px;
+        // background-color: red;
+        margin: 35px 0px;
+        .client-photo {
+            // background-color: orange;
+            height: 100%;
+            width: 35%;
+        }
+        .client-text{
+            height: 100%;
+            width: 65%;
+            margin-left: 20px;
+            font-family: $GS-Italic;
+            font-size: 16px;
+            line-height: 20px;
+            .client-name {
+                color: $blue;
+                margin-top: 70px;
+                text-align: end;
+                font-size: 20px;
+                font-family: $Nova;
+            }
+        } 
+    }
+}
+    .miranda {
+        background-image: url(../images/about-client-01.jpg);
+        @include image-format;
+    }
+    .johnathan {
+        background-image: url(../images/about-client-02.jpg);
+        @include image-format;
+    }
+
+
+@media (max-width: 1024px) {
+    .about {
+        margin: 0 auto;
+        width: 93%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper .about .client-holder .client-name {
+        margin-top: 36px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-wrapper .about .client-holder .client-name {
+        margin-top: 15px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .content-wrapper .about .client-holder .client-text {
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+    .content-wrapper .about .client-holder .client-name {
+        font-size: 18px !important;
+    }
+}

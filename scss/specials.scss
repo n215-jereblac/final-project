@@ -1,0 +1,106 @@
+.specials {
+  width: 980px;
+  // background-color: aqua;
+  min-height: 960px;
+  margin: 0 auto;
+  padding-top: 150px;
+  .specials-header {
+    font-size: 30px;
+    font-family: $NovaC;
+    border-bottom: 2px solid $black;
+    width: 225px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+  }
+  .specials-holder {
+    // background-color: red;
+    height: 287px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 60px;
+    .specials-pic {
+      //   background-color: green;
+      width: 23%;
+      height: 100%;
+      margin-right: 20px;
+      @include image-format;
+    }
+    .specials-text {
+      width: 75%;
+      //   background-color: orange;
+      .text-wrapper {
+        display: flex;
+        .offer-header {
+          font-size: 30px;
+          font-family: $NovaC;
+          border-bottom: 2px solid $black;
+          letter-spacing: 3px;
+        }
+        span {
+          font-size: 20px;
+          font-family: $NovaC;
+          padding-top: 10px;
+          padding-left: 10px;
+          color: $orange;
+        }
+      }
+      p {
+        font-family: $GS-Light;
+        font-size: 16px;
+        margin-top: 22px;
+      }
+      .specials-button {
+        width: 133px;
+        height: 40px;
+        background-color: $blue;
+        border-radius: 20px;
+        color: $white;
+        font-size: 15px;
+        font-family: $GS;
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.special1 {
+  background-image: url(../images/special-offer-01.jpg);
+}
+
+.special2 {
+  background-image: url(../images/special-offer-02.jpg);
+}
+
+@media (max-width: 1024px) {
+  .specials {
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+
+@media (max-width: 625px) {
+  .specials {
+    .specials-holder {
+      .specials-pic {
+        width: 50%;
+      }
+      .specials-text {
+        .text-wrapper {
+          .offer-header {
+            font-size: 24.5px;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+        p {
+          font-size: 13px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

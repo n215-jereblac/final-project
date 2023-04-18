@@ -1,0 +1,1108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url(../css/fonts/Gill\ Sans.otf);
+}
+@font-face {
+  font-family: "Gill Sans Italic";
+  src: url(../css/fonts/Gill\ Sans\ Italic.otf);
+}
+@font-face {
+  font-family: "Gill Sans Bold";
+  src: url(../css/fonts/Gill\ Sans\ Bold.otf);
+}
+@font-face {
+  font-family: "Gill Sans Light";
+  src: url(../css/fonts/Gill\ Sans\ Light.otf);
+}
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: url(../css/fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: "Proxima Nova Condensed";
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+.site-wrapper {
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-holder {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}
+.nav-holder nav {
+  max-width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  font-family: "Gill Sans";
+}
+.nav-holder nav .link-holder {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.nav-holder nav .link-holder .links {
+  max-width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-holder nav .link-holder .links a {
+  padding-right: 21.5px;
+  padding-left: 21.5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  border-right: 1px solid #79addc;
+}
+.nav-holder nav .link-holder .links a:last-child {
+  border-right: none;
+  padding-right: 0px;
+}
+.nav-holder .nav-black {
+  border-bottom: 2px solid #000;
+}
+.nav-holder .a-black a {
+  color: #000 !important;
+}
+
+.logo-img {
+  background-image: url(../images/logo-white.png);
+}
+
+@media (max-width: 1200px) {
+  .nav-holder {
+    left: 13px;
+    width: 95%;
+  }
+}
+@media (max-width: 630px) {
+  .nav-holder nav .link-holder .links a {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-holder nav .logo img {
+    width: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-holder nav .link-holder .links a {
+    font-size: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-holder nav .logo img {
+    width: 60px;
+  }
+}
+@media (max-width: 420px) {
+  .nav-holder {
+    max-width: 90%;
+  }
+  .nav-holder nav .link-holder .links a {
+    font-size: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .nav-holder nav .logo img {
+    width: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .nav-holder nav .link-holder .links a {
+    font-size: 8.5px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+.home .hero {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.home .hero .callout-holder {
+  height: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.home .hero .callout-holder .callout {
+  margin: 0 auto;
+  color: #fff;
+}
+.home .hero .callout-holder .callout h1 {
+  font-family: "Proxima Nova Condensed";
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.home .hero .callout-holder .callout p {
+  font-family: "Gill Sans Italic";
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 48px;
+}
+.home .hero span {
+  margin: 0 auto;
+  height: 40px;
+  width: 121px;
+  display: block;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Gill Sans";
+  font-size: 15px;
+  cursor: pointer;
+}
+.home .home-page {
+  min-height: 1250px;
+}
+.home .home-page .tours-home {
+  margin: -43px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 304px;
+  max-width: 818px;
+}
+.home .home-page .tours-home .tour-card {
+  min-height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.home .home-page .tours-home .tour-card .tour-text {
+  color: #fff;
+  font-family: "Proxima Nova Condensed";
+  margin-top: 50px;
+}
+.home .home-page .tours-home .tour-card .tour-text h1 {
+  font-size: 60px;
+  line-height: 73px;
+}
+.home .home-page .tours-home .tour-card .tour-text h2 {
+  font-size: 30px;
+  line-height: 5px;
+  margin-bottom: 60px;
+}
+.home .home-page .tours-home .tour-card .tours-button {
+  margin: 0 auto;
+  height: 40px;
+  width: 133px;
+  background-color: #79addc;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .home-page .tours-home .tour-card .tours-button a {
+  font-family: "Gill Sans";
+  text-decoration: none;
+  color: #fff;
+}
+.home .home-page .form-wrap {
+  margin: 50px auto 0 auto;
+  max-width: 818px;
+}
+.home .home-page .form-wrap h1 {
+  font-family: "Proxima Nova Condensed";
+  font-size: 60px;
+}
+.home .home-page .form-wrap .form {
+  font-family: "Gill Sans Light";
+  font-size: 18px;
+}
+.home .home-page .form-wrap .form input {
+  border: solid #79addc 2px;
+  height: 58px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.home .home-page .form-wrap .form .form-info {
+  margin-top: 30px;
+  min-height: 58px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home .home-page .form-wrap .form .form-info .left {
+  width: 42%;
+  height: 58px;
+  padding: 20px;
+}
+.home .home-page .form-wrap .form .form-info .right {
+  width: 55%;
+  height: 58px;
+  padding: 20px;
+}
+.home .home-page .form-wrap .form .single-line {
+  position: relative;
+}
+.home .home-page .form-wrap .form .single-line .in {
+  margin-right: 52px;
+}
+.home .home-page .form-wrap .form .single-line .out {
+  margin-right: 41px;
+}
+.home .home-page .form-wrap .form .single-line .date-input {
+  width: 85%;
+  padding: 20px;
+}
+.home .home-page .form-wrap .form .single-line .icon {
+  font-size: 18px;
+  position: absolute;
+  margin: 20px -40px;
+}
+.home .home-page .form-wrap .form .family-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.home .home-page .form-wrap .form .family-input select {
+  height: 58px;
+  width: 11%;
+  padding: 15px;
+  border: solid #79addc 2px;
+  font-family: "Gill Sans Light";
+  font-size: 18px;
+}
+.home .home-page .form-wrap .form textarea {
+  width: 100%;
+  height: 192px;
+  padding: 20px;
+  font-family: "Gill Sans Light";
+  font-size: 18px;
+  border: solid #79addc 2px;
+  margin-bottom: 35px;
+}
+.home .home-page .form-wrap .form .submit {
+  color: #fff;
+  width: 100%;
+  background-color: #79addc;
+  font-size: 15px;
+  font-family: "Gill Sans";
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.israel-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
+}
+
+.us-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
+}
+
+.aussie-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
+}
+
+@media (max-width: 1200px) {
+  .form-wrap h1 {
+    text-align: center;
+  }
+  .form-wrap .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .form-wrap .form .single-line .date-input {
+    min-width: 100%;
+    margin-top: 5px;
+  }
+  .form-wrap .form .submit {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 860px) {
+  .home .tours-home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .tours-home .tour-card {
+    margin-bottom: 20px;
+  }
+  .home .home-page .form-wrap .form .submit {
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 620px) {
+  .form-wrap .form .family-input select {
+    width: 65px !important;
+  }
+}
+@media (max-width: 566px) {
+  .form-wrap .form .family-input {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .home .hero .callout-holder .callout p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .form-wrap .form .family-input select {
+    width: 47px !important;
+    padding: 5px !important;
+  }
+}
+@media (max-width: 340px) {
+  .home .hero .callout-holder .callout p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 1050px;
+}
+.about .about-text {
+  padding-top: 180px;
+}
+.about .about-text h1 {
+  border-bottom: solid 2px #000;
+  width: 171px;
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: "Proxima Nova Condensed";
+}
+.about .about-text p {
+  margin-top: 35px;
+  margin-bottom: 100px;
+  font-family: "Gill Sans";
+  font-size: 16px;
+}
+.about h2 {
+  letter-spacing: 2px;
+  border-bottom: solid 2px #000;
+  width: 225px;
+  font-family: "Proxima Nova Condensed";
+  font-size: 40px;
+}
+.about .client-holder {
+  display: flex;
+  max-width: 712px;
+  height: 150px;
+  margin: 35px 0px;
+}
+.about .client-holder .client-photo {
+  height: 100%;
+  width: 35%;
+}
+.about .client-holder .client-text {
+  height: 100%;
+  width: 65%;
+  margin-left: 20px;
+  font-family: "Gill Sans Italic";
+  font-size: 16px;
+  line-height: 20px;
+}
+.about .client-holder .client-text .client-name {
+  color: #79addc;
+  margin-top: 70px;
+  text-align: end;
+  font-size: 20px;
+  font-family: "Proxima Nova Thin";
+}
+
+.miranda {
+  background-image: url(../images/about-client-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.johnathan {
+  background-image: url(../images/about-client-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+@media (max-width: 768px) {
+  .content-wrapper .about .client-holder .client-name {
+    margin-top: 36px !important;
+  }
+}
+@media (max-width: 500px) {
+  .content-wrapper .about .client-holder .client-name {
+    margin-top: 15px !important;
+  }
+}
+@media (max-width: 425px) {
+  .content-wrapper .about .client-holder .client-text {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  .content-wrapper .about .client-holder .client-name {
+    font-size: 18px !important;
+  }
+}
+.tours {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 1550px;
+  padding-top: 1px;
+}
+.tours .tours-hero {
+  margin-top: 142px;
+  width: 100%;
+  height: 200px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tours .tours-hero p {
+  color: #fff;
+  font-size: 60px;
+  font-family: "Proxima Nova Condensed";
+  letter-spacing: 5px;
+}
+.tours .tours-wrapper {
+  margin: 0 auto;
+  width: 95%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.tours .tours-wrapper .tour-card {
+  min-height: 304px;
+  width: 236px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 55px;
+}
+.tours .tours-wrapper .tour-card .tour-text {
+  color: #fff;
+  font-family: "Proxima Nova Condensed";
+  margin-top: 50px;
+}
+.tours .tours-wrapper .tour-card .tour-text h1 {
+  font-size: 60px;
+  line-height: 73px;
+}
+.tours .tours-wrapper .tour-card .tour-text h2 {
+  font-size: 30px;
+  line-height: 5px;
+  margin-bottom: 60px;
+}
+.tours .tours-wrapper .tour-card .tour-text .newz {
+  font-size: 53px;
+}
+.tours .tours-wrapper .tour-card .tours-button {
+  margin: 0 auto;
+  height: 40px;
+  width: 133px;
+  background-color: #79addc;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tours .tours-wrapper .tour-card .tours-button a {
+  font-family: "Gill Sans";
+  text-decoration: none;
+  color: #fff;
+}
+
+.tours-head {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tours-header.jpg);
+}
+
+.newz-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-04.jpg);
+}
+
+.france-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-05.jpg);
+}
+
+.egypt-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-06.jpg);
+}
+
+.japan-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-07.jpg);
+}
+
+.canada-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-08.jpg);
+}
+
+.uae-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-09.jpg);
+}
+
+@media (max-width: 1024px) {
+  .tours {
+    padding-top: 142px;
+  }
+  .tours .tours-hero {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+@media (max-width: 750px) {
+  .tours {
+    margin-bottom: 50px;
+  }
+}
+.packages {
+  padding-top: 143px;
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 1925px;
+}
+.packages .package-hero {
+  width: 100%;
+  height: 413px;
+  color: #fff;
+  font-family: "Proxima Nova Condensed";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.packages .package-hero .package-text {
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+}
+.packages .package-hero .package-text h1 {
+  font-size: 70px;
+}
+.packages .package-hero .price-text {
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  padding-right: 15px;
+}
+.packages .package-hero .price-text p {
+  font-size: 30px;
+}
+.packages .pic-wrap {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.packages .pic-wrap .tour-pic {
+  height: 347px;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.packages .tour-text {
+  margin-bottom: 80px;
+}
+.packages .tour-text h2 {
+  font-size: 60px;
+  width: 175px;
+  letter-spacing: 5px;
+  border-bottom: 2px solid #000;
+  font-family: "Proxima Nova Condensed";
+}
+.packages .tour-text p {
+  margin-top: 35px;
+  font-size: 16px;
+  font-family: "Gill Sans";
+}
+.packages .button {
+  display: flex;
+}
+.packages .button .book {
+  margin: 0 auto;
+  padding: 10px 33px;
+  background-color: #79addc;
+  color: #fff;
+  font-family: "Gill Sans";
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.israel1 {
+  background-image: url(../images/israel-tour-01.jpg);
+}
+
+.israel2 {
+  background-image: url(../images/israel-tour-02.jpg);
+}
+
+.israel3 {
+  background-image: url(../images/israel-tour-03.jpg);
+}
+
+.usa1 {
+  background-image: url(../images/usa-tour-01.jpg);
+}
+
+.usa2 {
+  background-image: url(../images/usa-tour-02.jpg);
+}
+
+.usa3 {
+  background-image: url(../images/usa-tour-03.jpg);
+}
+
+.aus1 {
+  background-image: url(../images/aus-tour-01.jpg);
+}
+
+.aus2 {
+  background-image: url(../images/aus-tour-02.jpg);
+}
+
+.aus3 {
+  background-image: url(../images/aus-tour-03.jpg);
+}
+
+.newz1 {
+  background-image: url(../images/nz-tour-01.jpg);
+}
+
+.newz2 {
+  background-image: url(../images/nz-tour-02.jpg);
+}
+
+.newz3 {
+  background-image: url(../images/nz-tour-03.jpg);
+}
+
+.france1 {
+  background-image: url(../images/france-tour-01.jpg);
+}
+
+.france2 {
+  background-image: url(../images/france-tour-02.jpg);
+}
+
+.france3 {
+  background-image: url(../images/france-tour-03.jpg);
+}
+
+.egypt1 {
+  background-image: url(../images/egypt-tour-01.jpg);
+}
+
+.egypt2 {
+  background-image: url(../images/egypt-tour-02.jpg);
+}
+
+.egypt3 {
+  background-image: url(../images/egypt-tour-03.jpg);
+}
+
+.japan1 {
+  background-image: url(../images/japan-tour-01.jpg);
+}
+
+.japan2 {
+  background-image: url(../images/japan-tour-02.jpg);
+}
+
+.japan3 {
+  background-image: url(../images/japan-tour-03.jpg);
+}
+
+.canada1 {
+  background-image: url(../images/canada-tour-01.jpg);
+}
+
+.canada2 {
+  background-image: url(../images/canada-tour-02.jpg);
+}
+
+.canada3 {
+  background-image: url(../images/canada-tour-03.jpg);
+}
+
+.uae1 {
+  background-image: url(../images/uae-tour-01.jpg);
+}
+
+.uae2 {
+  background-image: url(../images/uae-tour-02.jpg);
+}
+
+.uae3 {
+  background-image: url(../images/uae-tour-03.jpg);
+}
+
+@media (max-width: 1024px) {
+  .packages {
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+.specials {
+  width: 980px;
+  min-height: 960px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.specials .specials-header {
+  font-size: 30px;
+  font-family: "Proxima Nova Condensed";
+  border-bottom: 2px solid #000;
+  width: 225px;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+}
+.specials .specials-holder {
+  height: 287px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 60px;
+}
+.specials .specials-holder .specials-pic {
+  width: 23%;
+  height: 100%;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.specials .specials-holder .specials-text {
+  width: 75%;
+}
+.specials .specials-holder .specials-text .text-wrapper {
+  display: flex;
+}
+.specials .specials-holder .specials-text .text-wrapper .offer-header {
+  font-size: 30px;
+  font-family: "Proxima Nova Condensed";
+  border-bottom: 2px solid #000;
+  letter-spacing: 3px;
+}
+.specials .specials-holder .specials-text .text-wrapper span {
+  font-size: 20px;
+  font-family: "Proxima Nova Condensed";
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #ff7d38;
+}
+.specials .specials-holder .specials-text p {
+  font-family: "Gill Sans Light";
+  font-size: 16px;
+  margin-top: 22px;
+}
+.specials .specials-holder .specials-text .specials-button {
+  width: 133px;
+  height: 40px;
+  background-color: #79addc;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Gill Sans";
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.special1 {
+  background-image: url(../images/special-offer-01.jpg);
+}
+
+.special2 {
+  background-image: url(../images/special-offer-02.jpg);
+}
+
+@media (max-width: 1024px) {
+  .specials {
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+@media (max-width: 625px) {
+  .specials .specials-holder .specials-pic {
+    width: 50%;
+  }
+  .specials .specials-holder .specials-text .text-wrapper .offer-header {
+    font-size: 24.5px;
+  }
+  .specials .specials-holder .specials-text .text-wrapper span {
+    font-size: 15px;
+  }
+  .specials .specials-holder .specials-text p {
+    font-size: 13px;
+    margin-bottom: 50px;
+  }
+}
+.blog {
+  padding-top: 150px;
+  max-width: 980px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+.blog .blog-header {
+  font-size: 30px;
+  font-family: "Proxima Nova Condensed";
+  letter-spacing: 5px;
+  border-bottom: 2px solid #000;
+  width: 106px;
+  margin-bottom: 32px;
+}
+.blog .post {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  margin-bottom: 75px;
+  font-family: "Gill Sans";
+}
+.blog .post .left {
+  width: 60px;
+  margin-right: 20px;
+}
+.blog .post .left .date-box {
+  background-color: #79addc;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  height: 60px;
+  width: 60px;
+  font-family: "Gill Sans Light";
+}
+.blog .post .left .date-box span {
+  font-family: "Gill Sans Bold";
+  font-size: 22px;
+}
+.blog .post .right {
+  width: 900px;
+}
+.blog .post .right .post-img {
+  width: 100%;
+  height: 259px;
+  background-image: url(../images/blog.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.blog .post .right p {
+  font-size: 15px;
+}
+.blog .post .right .p-blue {
+  color: #79addc;
+  font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .blog {
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+.contact {
+  width: 980px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.contact .contact-header {
+  font-size: 30px;
+  font-family: "Proxima Nova Condensed";
+  border-bottom: 2px solid #000;
+  width: 159px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+.contact .contact-holder {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  font-family: "Gill Sans";
+  margin-bottom: 50px;
+}
+.contact .contact-holder .map-holder {
+  width: 40%;
+  max-height: 100%;
+  margin-right: 50px;
+  font-size: 18px;
+}
+.contact .contact-holder .map-holder iframe {
+  height: 442px;
+  width: 100%;
+}
+.contact .contact-holder .map-holder p {
+  margin-top: 34px;
+}
+.contact .contact-holder .form-holder {
+  width: 55%;
+  height: 650px;
+  font-size: 16px;
+}
+.contact .contact-holder .form-holder input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border: none;
+  background-color: #f5f5f5;
+  margin-bottom: 21px;
+  padding-left: 21px;
+  font-size: 16px;
+}
+.contact .contact-holder .form-holder textarea {
+  width: 100%;
+  height: 200px;
+  border: none;
+  background-color: #f5f5f5;
+  font-family: "Gill Sans";
+  font-size: 16px;
+  padding: 21px;
+  resize: none;
+}
+.contact .contact-holder .form-holder .contact-submit {
+  margin-top: 20px;
+  background-color: #79addc;
+  height: 60px;
+  width: 167px;
+  padding-top: 20px;
+  padding-left: 27px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+@media (max-width: 650px) {
+  .contact .map-holder p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 525px) {
+  .contact .map-holder p {
+    font-size: 12px;
+  }
+}
+footer {
+  background-color: #79addc;
+  font-family: "Gill Sans";
+  width: 100%;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer .footer {
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+footer .footer .socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 120px;
+  font-size: 20px;
+}
+footer .footer .socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  footer .footer {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer p {
+    font-size: 8px;
+  }
+  footer .footer img {
+    width: 80px;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer p {
+    font-size: 8px;
+  }
+  footer .footer img {
+    width: 80px;
+  }
+  footer .footer .socials {
+    width: 100px;
+  }
+  footer .footer .socials a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer img {
+    width: 60px;
+  }
+  footer .footer .socials {
+    width: 90px;
+  }
+  footer .footer .socials a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  footer .footer p {
+    font-size: 7px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
