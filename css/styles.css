@@ -53,10 +53,16 @@ h1, h2, h3, h4, h5, h6, p {
   max-width: 980px;
   height: 90px;
   margin: 0 auto;
-  border-bottom: 2px solid #fff;
   display: flex;
   align-items: center;
   font-family: "Gill Sans";
+}
+.nav-holder nav .logo-white {
+  background-image: url(../images/logo-white.png);
+  height: 100px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .nav-holder nav .link-holder {
   display: flex;
@@ -81,15 +87,14 @@ h1, h2, h3, h4, h5, h6, p {
   border-right: none;
   padding-right: 0px;
 }
+.nav-holder .nav-white {
+  border-bottom: 2px solid #fff;
+}
 .nav-holder .nav-black {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000 !important;
 }
 .nav-holder .a-black a {
   color: #000 !important;
-}
-
-.logo-img {
-  background-image: url(../images/logo-white.png);
 }
 
 @media (max-width: 1200px) {

@@ -13,4 +13,10 @@ if (pageID != "") {
         $("#app").html(data);
     })
     }
+
+    if (pageID = [0]) {
+        $("#nav").addClass("nav-white");
+    } else {
+        $("#nav").addClass("nav-black");
+    }
 }
