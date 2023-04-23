@@ -11,12 +11,20 @@ if (pageID != "") {
 } else {
     $.get(`pages/home.html`, function (data) {
         $("#app").html(data);
+        $('nav').addClass('nav-white'); 
+        $('nav').removeClass('nav-black');
     })
     }
-
-    if (pageID = [0]) {
-        $("#nav").addClass("nav-white");
-    } else {
-        $("#nav").addClass("nav-black");
-    }
+    if (pageID == pages[0]) {
+    $('nav').addClass('nav-white');  
+    $('nav').removeClass('nav-black');
+    // console.log(pageID);
+} else {
+    $('nav').removeClass('nav-white'); 
+    $('nav').addClass('nav-black'); 
+    // console.log(pageID);
 }
+}
+
+
+
