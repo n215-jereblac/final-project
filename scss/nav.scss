@@ -23,12 +23,19 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    .logo-black {
+      background-image: url(../images/logo-black.png);
+      height: 100px;
+      width: 150px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
     .link-holder {
       display: flex;
       justify-content: flex-end;
       width: 100%;
 
-      .links {
+      #links {
         max-width: 550px;
         display: flex;
         align-items: center;
@@ -36,8 +43,8 @@
         a {
           padding-right: 21.5px;
           padding-left: 21.5px;
-          color: $white;
           text-decoration: none;
+          color: $white;
           font-size: 15px;
           border-right: 1px solid $blue;
           &:last-child {
@@ -46,6 +53,11 @@
           }
         }
       }
+    }
+  }
+  .a-white {
+    a {
+      color: $white;
     }
   }
   .a-black {

@@ -57,8 +57,21 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   font-family: "Gill Sans";
 }
+.nav-holder nav .nav-white {
+  border-bottom: 2px solid #fff;
+}
+.nav-holder nav .nav-black {
+  border-bottom: 2px solid #000;
+}
 .nav-holder nav .logo-white {
   background-image: url(../images/logo-white.png);
+  height: 100px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nav-holder nav .logo-black {
+  background-image: url(../images/logo-black.png);
   height: 100px;
   width: 150px;
   background-repeat: no-repeat;
@@ -69,29 +82,26 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: flex-end;
   width: 100%;
 }
-.nav-holder nav .link-holder .links {
+.nav-holder nav .link-holder #links {
   max-width: 550px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.nav-holder nav .link-holder .links a {
+.nav-holder nav .link-holder #links a {
   padding-right: 21.5px;
   padding-left: 21.5px;
-  color: #fff;
   text-decoration: none;
+  color: #fff;
   font-size: 15px;
   border-right: 1px solid #79addc;
 }
-.nav-holder nav .link-holder .links a:last-child {
+.nav-holder nav .link-holder #links a:last-child {
   border-right: none;
   padding-right: 0px;
 }
-.nav-holder .nav-white {
-  border-bottom: 2px solid #fff;
-}
-.nav-holder .nav-black {
-  border-bottom: 2px solid #000 !important;
+.nav-holder .a-white a {
+  color: #fff;
 }
 .nav-holder .a-black a {
   color: #000 !important;
