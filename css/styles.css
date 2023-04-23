@@ -58,14 +58,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Gill Sans";
 }
 .nav-holder nav .nav-white {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff !important;
 }
 .nav-holder nav .nav-black {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000 !important;
 }
 .nav-holder nav .logo-white {
   background-image: url(../images/logo-white.png);
-  height: 100px;
+  height: 50px;
   width: 150px;
   background-repeat: no-repeat;
   background-position: center;
