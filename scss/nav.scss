@@ -10,12 +10,7 @@
     display: flex;
     align-items: center;
     font-family: $GS;
-    .nav-white {
-      border-bottom: 2px solid $white !important;
-    }
-    .nav-black {
-      border-bottom: 2px solid $black !important;
-    }
+
     .logo-white {
       background-image: url(../images/logo-white.png);
       height: 50px;
@@ -54,6 +49,12 @@
         }
       }
     }
+  }
+  .nav-white {
+    border-bottom: 2px solid $white !important;
+  }
+  .nav-black {
+    border-bottom: 2px solid $black !important;
   }
   .a-white {
     a {
